@@ -10,7 +10,7 @@
 <body>
     <header>
         <div id="main-logo">
-            <img src="images/logo.png" alt="Praesignis Logo" width="512" height="200">
+            <img src="images/logo.png" alt="Praesignis Logo" height="height: 50px">
         </div>
         <div class="logo-nav"> 
            <nav>
@@ -29,8 +29,8 @@
     </header>
     <section class="hero">
         <p>Empower Your Learning Journey with Praesignis</p>
-        <button>Explore Courses</button>
-        <button>Learn about us</button>
+        <button onclick="window.location.href='Courses.html';">Explore Courses</button> 
+        <button onclick="window.location.href='Insights.html';">Why this course?</button> 
     </section>
     <section class="who_we_are">
         <div class="detail-box">
@@ -51,10 +51,8 @@
           For any Queries:
         </p>
         <form action="">
-          <input type="text" placeholder="Enter your email"><br><br>
-            <button>
-              Send Email
-            </button>
+          <textarea placeholder="Please type your query" class="query-input"></textarea><br><br>
+            <button class="query">Send Email</button>
           </div>
         </form>
       </div>

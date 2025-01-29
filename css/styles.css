@@ -14,6 +14,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-grow: 1;
+    gap: 15px;
 }
 .hero {
     border: 2px solid #faf7f7;
@@ -81,9 +82,8 @@ header {
     margin: 45px 0;
 }
 .col-lg-4 button:hover {
-    background-color: transparent;
+    background-color: purple;
     border-color: yellow;
-    color: yellow;
 }
 .copy p{
     display: flex;
@@ -114,7 +114,8 @@ header {
     border-radius: 4px;
 }
 .container button {
-    background: black;
+    background-color: purple;
+    border-color: yellow;;
     color: white;
     padding: 10px;
     border: none;
@@ -148,9 +149,8 @@ header {
     background-color: red;
 }
 button:hover {
-    background-color: blue;
+    background-color: purple;
     border-color: yellow;
-    color: yellow;
 }
 /*For Sign Up Page*/
 #sign_up {
@@ -176,8 +176,8 @@ button:hover {
     border-radius: 4px;
     }
 .container button {
-    background: black;
-    color: white;
+    background-color: purple;
+    border-color: yellow;
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -189,8 +189,16 @@ button:hover {
     text-decoration: none;
     }
 #signupForm button:hover {
-    background-color: blue;
+    background-color: purple;
     border-color: yellow;
-    color: yellow;
 }
-/*Make it responsive*/
+.query-input {
+    width: 440px;
+    height: 100px;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    white-space: pre-wrap;
+}
