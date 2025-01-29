@@ -42,7 +42,3 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 });
 
 //For Home Page//
-document.getElementById("search-button").addEventListener("click", function() {
-    let query = document.getElementById("search-box").value;
-    alert("You searched for: " + query);
-});

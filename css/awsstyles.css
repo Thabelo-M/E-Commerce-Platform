@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+header img {
+    height: 50px;
+}
+.aws-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 15px;
+}
+.aws-bar:hover {
+    background-color: purple;
+    border-color: yellow;
+}
+h1 {
+    margin: 20px 0;
+    color: #000;
+}
+.courses {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.course {
+    width: 250px;
+    padding: 15px;
+    border: 2px solid #f4f4f4;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+.course:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.course img {
+    width: 100px;
+    height: auto;
+}
+.course button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.course button:hover {
+    background-color: #0056b3;
+}
+.cart {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 30px;
+    padding: 5px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.cart img {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+}
+.cart span {
+    font-weight: bold;
+}
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+footer a:hover {
+    text-decoration: underline;
+}
