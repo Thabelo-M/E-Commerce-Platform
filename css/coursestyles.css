@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; padding: 14px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #f4f4f4;
+    background-color: #a9d23f;
 }
 header img {
     height: 50px;
@@ -23,11 +23,13 @@ header img {
     gap: 15px;
 }
 nav a:hover {
-    color: #007bff;
+    color: #da291c
+    ;
 }
 h1 {
     margin: 20px 0;
-    color: #6c2dc7;
+    color: #9873ac;
+
 }
 .courses {
     display: flex;
@@ -44,16 +46,20 @@ h1 {
     width: 100px;
     height: auto;
 }
+.course a:hover{
+    color: #da291c;
+}
 footer {
     margin-top: 20px;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #a9d23f;
 }
 footer a {
     margin: 0 10px;
     text-decoration: none;
-    color: #007bff;
+    color: #0077cf;
 }
 footer a:hover {
     text-decoration: underline;
+    color: #da291c;
 }

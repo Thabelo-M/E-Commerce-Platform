@@ -1,13 +1,22 @@
 body {
     text-size-adjust: 12pt;
-    font-family: Arial, Helvetica, sans-serif;
     color: black;
+    font-family: Arial, sans-serif; padding: 14px;
+    margin: 0;
+    padding: 0;
  }
-header {
+ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
+    background-color: #a9d23f;
+}
+header img {
+    height: 50px;
+}
+nav a:hover {
+    color: #da291c;
 }
 .logo-nav {
     display: flex;
@@ -82,8 +91,8 @@ header {
     margin: 45px 0;
 }
 .col-lg-4 button:hover {
-    background-color: purple;
-    border-color: yellow;
+    background-color: #63666A;
+    border-color: #D69A2D;
 }
 .copy p{
     display: flex;
@@ -114,14 +123,14 @@ header {
     border-radius: 4px;
 }
 .container button {
-    background-color: purple;
-    border-color: yellow;;
+    background-color: #63666A;
+    border-color: #D69A2D;;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 100%;
+    width: 30%;
 }
 .container a {
     color: blue;
@@ -149,8 +158,8 @@ header {
     background-color: red;
 }
 button:hover {
-    background-color: purple;
-    border-color: yellow;
+    background-color: #63666A;
+    border-color: #D69A2D;
 }
 /*For Sign Up Page*/
 #sign_up {
@@ -176,8 +185,8 @@ button:hover {
     border-radius: 4px;
     }
 .container button {
-    background-color: purple;
-    border-color: yellow;
+    background-color: #D69A2D;
+    border-color: #63666A;
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -189,8 +198,8 @@ button:hover {
     text-decoration: none;
     }
 #signupForm button:hover {
-    background-color: purple;
-    border-color: yellow;
+    background-color: transparent;
+    border-color: #D69A2D;
 }
 .query-input {
     width: 440px;
@@ -201,4 +210,18 @@ button:hover {
     border-radius: 5px;
     resize: vertical;
     white-space: pre-wrap;
+}
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #a9d23f;
+}
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0077cf;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #da291c;
 }
