@@ -24,17 +24,17 @@ header {
 header img {
         height: 50px;
     }
-    footer {
+footer {
         margin-top: 20px;
         padding: 20px;
         background-color: #a9d23f;
     }
-    footer a {
+footer a {
         margin: 0 10px;
         text-decoration: none;
         color: #0077cf;
     }
-    footer a:hover {
+footer a:hover {
         text-decoration: underline;
         color: #da291c;
     }

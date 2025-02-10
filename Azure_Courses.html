@@ -27,7 +27,7 @@
     <h1>Azure Course</h1>
     <section class="courses">
         <div class="course">
-            <img src="images/fundamentals.png" alt="Azure Fundamentals">
+            <img src="images/AFundamentals.png" alt="Azure Fundamentals">
             <h2>Azure Fundamentals</h2>
             <h4>R1000.00</h4>
             <button onclick="addToCart(1000)">Add to Cart</button>
@@ -35,15 +35,31 @@
         <div class="course">
             <img src="images/admin.png" alt="Azure Administrator Associate">
             <h2>Azure Administrator Associate</h2>
-            <h4>1550.00</h4>
+            <h4>R1500.00</h4>
             <button onclick="addToCart(1550)">Add to Cart</button>
         </div>
         <div class="course">
-            <img src="images/datafun.png" alt="Azure Data Fundamentals">
-            <h2>Azure Data Fundamentals</h2>
-            <h4>1050.00</h4>
+            <img src="images/Security.png" alt="Azure Security Compliance and Identity Fundamentals">
+            <h2>Azure Security Compliance and Identity Fundamentals</h2>
+            <h4>R1000.00</h4>
             <button onclick="addToCart(1050)">Add to Cart</button>
         </div>
+        <div class="course">
+            <img src="images/AFundamentals.png" alt="Azure AI Fundamentals">
+            <h2>Azure AI Fundamentals</h2>
+            <h4>R1000.00</h4>
+            <button onclick="addToCart(1050)">Add to Cart</button>
+        </div>
+        <!-- Pop -->
+        <div id="confirmationModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="confirmationMessage"></p>
+                <button id="confirmButton">Yes</button>
+                <button id="cancelButton">No</button>
+            </div>
+        </div>
+        <!--  -->
     </section>
     <hr>
     <footer>

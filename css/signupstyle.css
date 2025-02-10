@@ -1,0 +1,62 @@
+#sign_up {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    }
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px  #041E42;
+    text-align: center;
+    }
+.container input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    }
+h2{
+        color: #9873ac;
+}
+.container a {
+    color:  #0077cf;
+    text-decoration: none;
+    }
+#signupForm button:hover {
+    background-color: transparent;
+    border-color:  #f2cd00;
+}
+#signupForm button {
+    border-color: #0077cf;
+}
+.container a:hover{
+    color: #da291c;
+}
+.popup-message {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    position: fixed; /* Ensure the popup is fixed at the top */
+    top: 10px; /* Distance from the top of the page */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Adjust to perfectly center */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+.popup-success {
+    background-color: #a9d23f;
+    color: black;
+    border: 1px solid #0077cf;
+}
+.popup-error {
+    background-color: #da291c;
+    color: black;
+    border: 1px solid #0077cf;
+}

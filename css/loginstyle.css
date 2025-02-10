@@ -1,0 +1,64 @@
+#login {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+h2{
+    color: #9873ac;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #041E42;
+    text-align: center;
+}
+.container input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+#loginForm button:hover{
+    background-color: transparent;
+    border-color:  #f2cd00;
+}
+#loginForm button{
+    border-color: #0077cf;
+}
+.container a {
+    color: #0077cf;
+    text-decoration: none;
+}
+.container a:hover {
+    color: #da291c;
+}
+.popup-message {
+    display: none; 
+    position: fixed;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.popup-success {
+    background-color: #a9d23f;
+    color: black;
+    border: 1px solid #0077cf;
+}
+.popup-error {
+    background-color:  #da291c;
+    color: black;
+    border: 1px solid #0077cf;
+}

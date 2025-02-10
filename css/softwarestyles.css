@@ -54,6 +54,8 @@ h1 {
 .course:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    background-color: #f2cd00 ;
+    border-color:  #a9d23f;
 }
 .course img {
     width: 100px;
@@ -62,15 +64,15 @@ h1 {
 .course button {
     margin-top: 10px;
     padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
+    color: black;
+    border-color: black;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
 }
 .course button:hover {
-    background-color: #da291c;
+    background-color: transparent;
+    border-color:#0077cf;
 }
 .cart {
     display: flex;
