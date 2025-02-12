@@ -7,6 +7,14 @@
     background-color: #f4f4f4;
     color: #101820;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #a9d23f;
+    border-bottom: 2px solid darkgreen;
+}
 h2{
     color: #9873ac;
 }
@@ -51,7 +59,6 @@ h2{
     text-align: center;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
 }
 .popup-success {
     background-color: #a9d23f;

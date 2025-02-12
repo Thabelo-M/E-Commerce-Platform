@@ -1,9 +1,24 @@
-body {
-    font-family: Arial, sans-serif; padding: 14px;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    text-align: center;
+    overflow-x: hidden;
+}
+body {
+    font-family: Arial, sans-serif 14px;
     color: #101820;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+footer {
+    background-color: #a9d23f;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; 
+    border-top: 2px solid darkgreen;
+    border-bottom: 2px solid darkgreen;
 }
 header {
     display: flex;
@@ -11,6 +26,7 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: #a9d23f;
+    border-bottom: 2px solid darkgreen;
 }
 header img {
     height: 50px;
@@ -90,11 +106,6 @@ h1 {
 .cart span {
     font-weight: bold;
 }
-footer {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #a9d23f;
-}
 footer a {
     margin: 0 10px;
     text-decoration: none;
@@ -116,7 +127,7 @@ footer a:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 .modal-content {
-    background-color: #fff;
+    background-color: #ffffffe7;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
