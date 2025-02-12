@@ -3,6 +3,7 @@ body { font-family: Arial, sans-serif; padding: 14px; }
         .cart-item { display: flex; justify-content: space-between; padding: 10px 0; }
         .total { font-weight: bold; margin-top: 20px; }
         button { padding: 10px; margin-top: 10px; cursor: pointer; 
+        color: #101820;
 }
 .cart-nav {
         display: flex;
