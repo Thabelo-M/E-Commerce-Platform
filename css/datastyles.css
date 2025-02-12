@@ -82,9 +82,12 @@ h1 {
     cursor: pointer;
     font-size: 14px;
 }
-.course button:hover {
+.course button {
     background-color: transparent;
     border-color:#0077cf;
+}
+button:hover {
+    border: transparent;
 }
 .cart {
     display: flex;

@@ -62,16 +62,23 @@ footer a:hover {
     }
 /* new */
 #cart {
-        border: 1px solid #ddd;
-        padding: 20px;
-        width: 50%;
+        border: 1px solid #63666A;
+        padding: 10px;
+        width: 20%;
         margin: auto;
-        background-color: #f9f9f9;
+        background-color: white;
+}
+button:hover {
+        border-color:transparent;
 }
 button {
-        background-color: blue;
-        color: white;
-        padding: 10px;
-        margin: 10px;
+        color: black;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        background-color: transparent;
+        border-color:#0077cf;
+        padding: 10px 20px;
+        margin: 5px;
         cursor: pointer;
 }
