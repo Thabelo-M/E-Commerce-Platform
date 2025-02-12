@@ -20,17 +20,16 @@
             </nav> 
         </div>
     </header>
-    <h2>Cart</h2>
-    <div class="cart">
+    <section id="cart">
+        <h2>Your Cart</h2>
         <div id="cart-items"></div>
-        <p class="total">Total: R<span id="total-price">0</span></p>
-        <p class="total">VAT: R400</p>
-        <p class="total">Grand Total: R<span id="grand-total">400</span></p>
-        <textarea placeholder="Notes for seller"></textarea>
+        <p><strong>Total:</strong> R<span id="cart-total">0.00</span></p>
+        <p><strong>VAT (17%):</strong> R<span id="vat-amount">0.00</span></p>
+        <p><strong>Final Total:</strong> R<span id="final-total">0.00</span></p>
+        <textarea id="notes" placeholder="Notes for seller"></textarea>
         <button onclick="checkout()">Check Out</button>
-        <button onclick="addMoreCourses()">Add more courses</button>
-    </div>
-    <hr>
+        <button onclick="continueShopping()">Add more courses</button>
+        </section>
     <footer>
         <h4>Contact Us:</h4>
         <strong>Tel:</strong> +27 11 022 6812 |

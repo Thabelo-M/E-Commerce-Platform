@@ -60,3 +60,18 @@ footer a:hover {
         text-decoration: underline;
         color: #da291c;
     }
+/* new */
+#cart {
+        border: 1px solid #ddd;
+        padding: 20px;
+        width: 50%;
+        margin: auto;
+        background-color: #f9f9f9;
+}
+button {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        cursor: pointer;
+}

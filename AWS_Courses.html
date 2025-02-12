@@ -6,6 +6,7 @@
     <title>AWS Courses</title>
     <link rel="stylesheet" href="css/awsstyles.css">
     <script src="js/awscourses.js"></script>
+    <script src="js/cartscript.js"></script>
 </head>
 <body>
     <header>
@@ -31,19 +32,19 @@
             <img src="images/awsCloud.png" alt="AWS Cloud Practitioner">
             <h2>AWS Cloud Practitioner</h2>
             <h4>R1250.00</h4>
-            <button onclick="addToCart(1250)">Add to Cart</button>
+            <button onclick="addToCart('AWS Cloud Practitioner', 1250)">Add to Cart</button>
         </div>
         <div class="course">
             <img src="images/awsDeveloper.png" alt="AWS Developer Associate">
             <h2>AWS Developer Associate</h2>
             <h4>R2500.00</h4>
-            <button onclick="addToCart(2500)">Add to Cart</button>
+            <button onclick="addToCart('AWS Developer Associate', 2500)">Add to Cart</button>
         </div>
         <div class="course">
             <img src="images/awsSolutions.png" alt="AWS Solutions Architect Associate">
             <h2>AWS Solutions Architect Associate</h2>
             <h4>R2100.00</h4>
-            <button onclick="addToCart(2100)">Add to Cart</button>
+            <button onclick="addToCart('AWS Solutions Architect Associate', 2100)">Add to Cart</button>
         </div>
         <!-- Pop -->
         <div id="confirmationModal" class="modal">
