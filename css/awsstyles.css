@@ -6,27 +6,28 @@ html, body {
 }
 body {
     font-family: Arial, sans-serif 14px;
-    color: #101820;
+    color: black;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 footer {
-    background-color: #a9d23f;
-    padding: 20px;
+    background-color: #D69A2D;
+    padding: 10px;
     text-align: center;
     width: 100%;
     margin-top: auto; 
-    border-top: 2px solid darkgreen;
-    border-bottom: 2px solid darkgreen;
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
 }
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 10px 20px;
-    background-color: #a9d23f;
-    border-bottom: 2px solid darkgreen;
+    background-color: #D69A2D;
+    border-bottom: 2px solid orange;
+    flex-wrap: wrap;
+    align-items: center;
 }
 header img {
     height: 50px;
@@ -37,23 +38,32 @@ header img {
     justify-content: center;
     flex-grow: 1;
     gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.aws-bar a{
+    color: black;
 }
 nav a:hover {
-    color: #da291c;
+    color: #4169E1;
 }
 h1 {
     margin: 20px 0;
-    color: #9873ac;
+    color: black;
+    text-shadow: 2px 2px 5px #F6C28B;
 }
 .courses {
     display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
     margin: 20px;
 }
 .course {
-    width: 250px;
+    width: 90%;
+    max-width: 250px;
     padding: 15px;
     border: 2px solid #f4f4f4;
     border-radius: 10px;
@@ -65,8 +75,8 @@ h1 {
 .course:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-    background-color: #f2cd00 ;
-    border-color:  #a9d23f;
+    background-color: #ADB4BF ;
+    border-color:  #D69A2D;
 }
 .course img {
     width: 100px;
@@ -111,12 +121,12 @@ button:hover {
 }
 footer a {
     margin: 0 10px;
-    text-decoration: none;
-    color: #0077cf;
+    text-decoration: underline;
+    color: black;
 }
 footer a:hover {
     text-decoration: underline;
-    color: #da291c;
+    color: #4169E1;
 }
 /* Pop */
 .modal {
@@ -130,12 +140,12 @@ footer a:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 .modal-content {
-    background-color: #ffffffe7;
+    background-color: #ADB4BF;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 25%;
-    height: 10%;
+    border: 2px solid orange;
+    width: 35%;
+    height: 20%;
     /* overflow: auto; */
 }
 .modal-content button {
@@ -144,10 +154,10 @@ footer a:hover {
 }
 .close {
     color: #aaa;
-    font-size: 28px;
+    font-size: 16px;
     font-weight: bold;
     position: absolute;
-    top: 10px;
+    top: 10px; 
     right: 20px;
 }
 .close:hover,
@@ -157,16 +167,15 @@ footer a:hover {
     cursor: pointer;
 }
 button {
-    padding: 10px 20px;
+    padding: 10px;
     margin: 5px;
-    cursor: pointer;
 }
 /* Toast Notification */
 .toast {
     visibility: hidden;
     min-width: 250px;
-    background-color: #da291c;
-    color: white;
+    background-color: #ADB4BF;
+    color: black;
     text-align: center;
     padding: 10px;
     position: fixed;
@@ -181,4 +190,43 @@ button {
 .toast.show {
     visibility: visible;
     opacity: 1;
+}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+.aws-bar {
+    flex-direction: column;
+    gap: 10px;
+} 
+.cart {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+}
+.courses {
+    flex-direction: column;
+    align-items: center;
+} 
+.course {
+    width: 80%;
+}
+footer {
+    font-size: 12px;
+    padding: 5px;
+}
+}
+/* For very small screens */
+@media (max-width: 480px) {
+.course {
+    width: 95%;
+}  
+footer {
+    text-align: center;
+    font-size: 10px;
+  }
 }

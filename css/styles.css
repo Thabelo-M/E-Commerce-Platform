@@ -5,38 +5,44 @@ html, body {
     overflow-x: hidden;
 }
 body {
-    font-family: Arial, sans-serif 14px;
-    color: #101820;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
     display: flex;
     flex-direction: column;
     text-align: center;
+    /* background-image: url('../images/background.jpg'); */
 }
 .foot {
-    background-color: #a9d23f;
+    background-color: #D69A2D;
     padding: 20px;
     text-align: center;
     width: 100%;
-    margin-top: auto; 
-    border-top: 2px solid darkgreen;
-    border-bottom: 2px solid darkgreen;
+    margin-top: auto;
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #a9d23f;
-    border-bottom: 2px solid darkgreen;
+    background-color: #D69A2D;
+    border-bottom: 2px solid orange;
 }
 header img {
     height: 50px;
 }
-h3{
-    color: #9873ac;
+h3 {
+    color: black;
     justify-self: center;
 }
 nav a:hover {
-    color: #da291c;
+    color: #4169E1;
+    text-decoration: none;
+}
+.logo-nav a {
+    color: black;
 }
 .logo-nav {
     display: flex;
@@ -50,14 +56,14 @@ nav a:hover {
     padding: 2px;
     text-align: center;
     margin: 2px;
-
 }
 .hero {
-    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ-OaAGrAAjBgHNyAzbb1TQdATqKA6oTSs-Q&s); Add a proper background image */
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
+
+/* Responsive design for tablets and smaller screens */
 @media (max-width: 1024px) {
     header {
         flex-direction: column;
@@ -80,7 +86,13 @@ nav a:hover {
         justify-content: center;
     }
 }
-@media (max-width: 480px) {
+
+/* For small screens and mobile devices */
+@media (max-width: 768px) {
+    .logo-nav {
+        flex-direction: column;
+        align-items: center;
+    }
     .logo-nav img {
         max-width: 80px;
     }
@@ -95,29 +107,53 @@ nav a:hover {
         align-items: center;
     }
 }
-button:hover{
-    border-color: transparent;
+
+/* For very small screens */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero {
+        padding: 15px;
+        margin: 5px;
+    }
+    .info_social {
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .query-input {
+        width: 90%;
+        height: 100px;
+        font-size: 16px;
+        padding: 12px;
+    }
 }
+
+/* For buttons */
 button {
     background-color: transparent;
     border-color: #0077cf;
 }
+
+button:hover {
+    border-color: transparent;
+}
+
 .foot a {
     margin: 0 10px;
-    text-decoration: none;
-    color: #0077cf;
+    text-decoration: underline;
+    color: black;
 }
 .foot a:hover {
-    text-decoration: underline;
-    color: #da291c;
-}
-.query-input {
-    width: 440px;
-    height: 100px;
-    padding: 15px;
-    font-size: 18px;
-    border: 1px solid #63666A;
-    border-radius: 5px;
-    resize: vertical;
-    white-space: pre-wrap;
+    text-decoration: none;
+    color: #4169E1;
 }
