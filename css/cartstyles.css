@@ -66,7 +66,8 @@ footer a:hover {
         padding: 10px;
         width: 20%;
         margin: auto;
-        background-color: #ADB4BF;
+        background-color: white;
+        border: 2px solid black;
 }
 button:hover {
         border-color:transparent;
