@@ -1,3 +1,4 @@
+/* Ensure full-screen alignment */
 #login {
     font-family: Arial, sans-serif;
     display: flex;
@@ -6,18 +7,9 @@
     height: 100vh;
     background-color: #f4f4f4;
     color: #101820;
+    background-image: url('../images/backg.jpg');
 }
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #a9d23f;
-    border-bottom: 2px solid darkgreen;
-}
-h2{
-    color: black;
-}
+/* Container for login form */
 .container {
     background: white;
     padding: 20px;
@@ -25,48 +17,76 @@ h2{
     box-shadow: 0 0 10px #041E42;
     text-align: center;
 }
+
+/* Labels for fields */
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Input styling */
 .container input {
     width: 100%;
-    padding: 8px;
-    margin: 10px 0;
+    padding: 6px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     border: 1px solid black;
     border-radius: 4px;
 }
-#loginForm button:hover{
-    background-color: transparent;
-    border-color:  #f2cd00;
-}
-#loginForm button{
+
+/* Login button */
+#loginForm button {
     border-color: #0077cf;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+#loginForm button:hover {
+    border-color: transparent;
+}
+
+/* Links */
 .container a {
+    color: black;
+    text-decoration: underline;
+}
+
+.container a:hover {
     color: #0077cf;
     text-decoration: none;
 }
-.container a:hover {
-    color: #da291c;
-}
-.popup-message {
-    display: none; 
+
+.popup {
+    display: none;
     position: fixed;
-    top: 20px; 
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px orange;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
 }
-.popup-success {
-    background-color: #a9d23f;
+.popup-content {
+    padding: 20px;
+}
+#close-popup {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border-color:#0077cf;
     color: black;
-    border: 1px solid #0077cf;
-}
-.popup-error {
-    background-color:  #da291c;
-    color: black;
-    border: 1px solid #0077cf;
-}
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #close-popup:hover {
+    border: transparent;
+  }

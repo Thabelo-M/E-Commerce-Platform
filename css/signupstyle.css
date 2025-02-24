@@ -5,7 +5,8 @@
     align-items: center;
     height: 100vh;
     background-color: #f4f4f4;
-    color: #101820;
+    color: black;
+    background-image: url('../images/backg.jpg');
     }
 .container {
     background: white;
@@ -14,6 +15,15 @@
     box-shadow: 0 0 10px  #041E42;
     text-align: center;
     }
+.container img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 50px;
+}
 .container input {
     width: 100%;
     padding: 8px;
@@ -24,40 +34,71 @@
 h2{
         color: black;
 }
+.container p {
+    color: black;
+}
 .container a {
-    color:  #0077cf;
-    text-decoration: none;
+    color: black;
+    text-decoration: underline;
     }
-#signupForm button:hover {
-    background-color: transparent;
-    border-color:  #f2cd00;
-}
-#signupForm button {
-    border-color: #0077cf;
-}
 .container a:hover{
-    color: #da291c;
+    color: #0077cf;
+    text-decoration: none;
 }
-.popup-message {
-    display: none;
-    padding: 10px;
-    margin-top: 10px;
+/* Popup Styles */
+.popup {
+  display: none; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px orange;
+  z-index: 9999; 
+  width: 300px; 
+  padding: 20px;
+  text-align: center;
+}
+.popup-content {
+  padding: 20px;
+}
+#close-popup {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border-color:#0077cf;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#close-popup:hover {
+  border: transparent;
+}
+
+/* Form container styles */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+input {
+  padding: 5px;
+  margin: 5px;
+  width: 60%;
+  border-radius: 5px;
+}
+button {
+    margin-top: 5px;
+    padding: 5px;
+    color: black;
+    border-color: black;
     border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-    position: fixed; /* Ensure the popup is fixed at the top */
-    top: 10px; /* Distance from the top of the page */
-    left: 50%; /* Center it horizontally */
-    transform: translateX(-50%); /* Adjust to perfectly center */
-    z-index: 1000; /* Ensure it stays on top of other elements */
+    cursor: pointer;
+    font-size: 14px;
+    background-color: transparent;
+    border-color:#0077cf;
 }
-.popup-success {
-    background-color: #a9d23f;
-    color: black;
-    border: 1px solid #0077cf;
-}
-.popup-error {
-    background-color: #da291c;
-    color: black;
-    border: 1px solid #0077cf;
+button:hover{
+    border-color: transparent
 }
