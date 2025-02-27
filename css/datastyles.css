@@ -230,3 +230,27 @@ footer {
     font-size: 10px;
   }
 }
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px; 
+}
+
+h1 {
+    margin: 20px 0;
+    color: black;
+    text-shadow: 2px 2px 5px #F6C28B;
+    text-align: center;
+}
+
+.back-link {
+    font-size: 50px; 
+    font-weight: bold;
+    text-decoration: none;
+    color: black; 
+}
+
+.back-link:hover {
+    color: #0077cf; 
+}

@@ -71,6 +71,26 @@ h1 {
     transform: translateY(-10px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
+.course:nth-child(2) p {
+    font-family: 'Courier New', monospace;
+    filter: blur(1.5px);
+    letter-spacing: 1px;
+    transform: rotate(0.5deg);
+    font-size: 14px; 
+    line-height: 1.2; 
+    word-wrap: break-word;
+    white-space: normal; 
+}
+.course:nth-child(4) p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    filter: blur(1px);
+    letter-spacing: 1px;
+    transform: rotate(0.5deg);
+    font-size: 14px; 
+    line-height: 1.4; 
+    word-wrap: break-word;
+    white-space: normal; 
+}
 .course h2 {
     color: black;
     text-align: center;
@@ -79,8 +99,8 @@ h1 {
 .course ul {
     padding: 0;
     margin: 0;
-    list-style-type: disc;
-    list-style-position: outside;
+    list-style-type: square;
+    list-style-position: inside;
     text-align: left;
 }
 
