@@ -38,8 +38,12 @@ header img {
         flex-grow: 1;
         gap: 15px;
 }
+.cart-nav a {
+        color: black;
+}
 nav a:hover {
         color: #4169E1;
+        text-decoration: none;
 }
 header {
         display: flex;
@@ -146,4 +150,16 @@ button {
 .popup-content button:hover {
         background: transparent;
 }
-    
+.cart-item button {
+        font-size: 14px; 
+        padding: 8px 12px; 
+        width: 35px; 
+        height: 35px; 
+        border-radius: 2px;
+        margin: 3px;
+        cursor: pointer;
+}
+.cart-item button:last-child {
+        width: auto; 
+        padding: 8px 16px;
+}

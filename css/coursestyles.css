@@ -108,6 +108,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 15px;
+    font-size: 14px;
  }
 .nav-bar {
     flex-direction: column;

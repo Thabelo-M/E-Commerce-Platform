@@ -51,6 +51,10 @@ nav a:hover {
     flex-grow: 1;
     gap: 15px;
 }
+.query-input {
+    height: 200px;
+    width: 500px;
+}
 .hero {
     border: 1px solid #63666A;
     padding: 2px;
