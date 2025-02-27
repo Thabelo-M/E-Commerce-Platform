@@ -112,14 +112,16 @@ function updateCartCount() {
     document.getElementById("cart-count").innerText = count;
 }
 
-// Function for checkout
+// Disabled this since there's no checkout page
+// function checkout() {
+//     alert("Proceeding to checkout...");
+//     localStorage.removeItem("cart");
+//     displayCartItems();
+//     updateCartCount();
+// }
 function checkout() {
-    alert("Proceeding to checkout...");
-    localStorage.removeItem("cart");
-    displayCartItems();
-    updateCartCount();
+    window.location,href = "#";
 }
-
 // Function for adding more courses
 function continueShopping() {
     window.location.href = "Courses.html";
