@@ -60,7 +60,7 @@ function displayCartItems() {
     }
 
     let promoDiscount = appliedPromo.discount || 0;
-    let vat = (totalPrice - promoDiscount) * 0.17; // VAT is calculated after promo
+    let vat = (totalPrice - promoDiscount) * 0.15; // VAT is calculated after promo
     let finalTotal = totalPrice - promoDiscount + vat;
 
     document.getElementById("cart-total").innerText = totalPrice.toFixed(2);
@@ -125,4 +125,14 @@ function checkout() {
 // Function for adding more courses
 function continueShopping() {
     window.location.href = "Courses.html";
+}
+
+let selectedCourse = { name: "", price: 0 };
+
+// Function to show the confirmation modal
+function showConfirmationModal(courseName, price) {
+    selectedCourse = { name: courseName, price: price }; // Store the selected course
+    document.getElementById("confirmation-message").innerText = 
+        `Do you want to add ${courseName} to your cart?`;
+    document.getElementById("confirmation-modal").style.display = "block";
 }
