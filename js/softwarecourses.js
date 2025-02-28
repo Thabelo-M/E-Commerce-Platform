@@ -5,17 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function addToCart(name, price) {
-    // Check if there are already 3 unique items in the cart
     if (cart.length >= 3) {
         showToast("You can only add up to 3 different courses to the cart.");
-        return; // Prevent adding more courses if there are already 3 unique courses
-    }
-
-    // Check if the exact same course is already in the cart
-    let existingItem = cart.find(item => item.name === name);
-    if (existingItem) {
-        showToast("You can't add the same course twice.");
-        return; // Prevent adding the exact same course again
+        return; 
     }
 
     const modal = document.getElementById("confirmationModal");
@@ -29,6 +21,7 @@ function addToCart(name, price) {
 
     confirmButton.onclick = function () {
         addItemToCart(name, price);
+        addItemToCart(name, price); 
         showToast(`${name} added to cart!`);
         closeModal();
     };
@@ -43,7 +36,6 @@ function addToCart(name, price) {
 }
 
 function addItemToCart(name, price) {
-    // Add the course if it's unique and there's space for it
     if (cart.length < 3) {
         cart.push({ name, price, quantity: 1 });
         localStorage.setItem("cart", JSON.stringify(cart));

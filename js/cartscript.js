@@ -124,7 +124,7 @@ function checkout() {
 }
 // Function for adding more courses
 function continueShopping() {
-    window.location.href = "Courses.html";
+    window.location.href = "Home.html";
 }
 
 let selectedCourse = { name: "", price: 0 };
