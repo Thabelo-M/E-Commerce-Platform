@@ -79,7 +79,10 @@ h1 {
     color: black;
     text-shadow: 2px 2px 5px red;
 }
-
+h3 {
+    color: black;
+    text-shadow: 2px 2px 2px #D69A2D;
+}
 .course ul {
     padding: 0;
     margin: 0;
@@ -193,4 +196,24 @@ footer a:hover {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+}
+
+.course:nth-child(4) p {
+    font-family: 'Papyrus', fantasy;
+    letter-spacing: 1px;
+    transform: rotate(0.5deg);
+    font-size: 14px;
+    line-height: 1.2; 
+    word-wrap: break-word;
+    white-space: normal; 
+}
+.course:nth-child(2) p {
+    font-family: 'Courier New', monospace;
+    filter: blur(1.5px);
+    letter-spacing: 1px;
+    transform: rotate(0.5deg);
+    font-size: 14px; 
+    line-height: 1.2;
+    word-wrap: break-word;
+    white-space: normal;
 }
